@@ -1,0 +1,128 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Fondo: cherry blossoms Minecraft */
+    background: url("https://wallpapers.com/images/file/beautiful-minecraft-cherry-blossoms-8zlaxmeiqm93j24f.jpg") no-repeat center center / cover;
+    position: relative;
+}
+
+/* Overlay para contraste */
+body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+/* Contenedor */
+.login-container {
+    position: relative;
+    z-index: 1;
+    /* arriba del overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Caja del login */
+.login-box {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 360px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Título */
+.login-title {
+    margin-bottom: 1.5rem;
+    color: #2e2e2e;
+    font-size: 1.6rem;
+}
+
+/* Formularios */
+.login-form .form-group {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.login-form label {
+    font-size: 0.9rem;
+    color: #444;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 0.7rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    transition: border 0.3s;
+}
+
+.login-form input:focus {
+    border-color: #ec407a;
+    /* rosa de los cerezos */
+    outline: none;
+}
+
+/* Botón */
+.btn {
+    width: 100%;
+    padding: 0.9rem;
+    background-color: #ec407a;
+    /* rosa sakura */
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #d81b60;
+}
+
+/* Links */
+.extra-links {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+}
+
+.extra-links a {
+    color: #2e2e2e;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.extra-links a:hover {
+    color: #ec407a;
+}
+
+/* Animación */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
