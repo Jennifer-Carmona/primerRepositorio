@@ -3,3 +3,4 @@ document.getElementById("btnSaludo").addEventListener("click", function () {
 }
 );
 //agregue comentario
+//modificacion del script
